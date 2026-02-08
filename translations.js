@@ -36,7 +36,10 @@ const translations = {
         contact_phone: "📞 +52 123 456 7890",
         contact_email: "✉️ contacto@driturre.me",
         map_placeholder: "Mapa de ubicación (Placeholder)",
-        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Todos los derechos reservados."
+        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Todos los derechos reservados.",
+        chat_header: "Asistente Virtual Dr. Iturre",
+        chat_welcome: "¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?",
+        chat_placeholder: "Escribe un mensaje..."
     },
     en: {
         nav_services: "Services",
@@ -75,7 +78,10 @@ const translations = {
         contact_phone: "📞 +52 123 456 7890",
         contact_email: "✉️ contact@driturre.me",
         map_placeholder: "Location Map (Placeholder)",
-        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. All rights reserved."
+        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. All rights reserved.",
+        chat_header: "Dr. Iturre Virtual Assistant",
+        chat_welcome: "Hello! I am your virtual assistant. How can I help you today?",
+        chat_placeholder: "Type a message..."
     },
     pt: {
         nav_services: "Serviços",
@@ -114,7 +120,10 @@ const translations = {
         contact_phone: "📞 +52 123 456 7890",
         contact_email: "✉️ contato@driturre.me",
         map_placeholder: "Mapa de localização (Espaço reservado)",
-        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Todos os direitos reservados."
+        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Todos os direitos reservados.",
+        chat_header: "Assistente Virtual Dr. Iturre",
+        chat_welcome: "Olá! Eu sou o seu assistente virtual. Como posso ajudar você hoje?",
+        chat_placeholder: "Digite uma mensagem..."
     },
     zh: {
         nav_services: "服务",
@@ -153,7 +162,10 @@ const translations = {
         contact_phone: "📞 +52 123 456 7890",
         contact_email: "✉️ contact@driturre.me",
         map_placeholder: "位置地图（占位符）",
-        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services。保留所有权利。"
+        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services。保留所有权利。",
+        chat_header: "Iturre 医生虚拟助手",
+        chat_welcome: "您好！我是您的虚拟助手。今天我能帮您什么？",
+        chat_placeholder: "输入消息..."
     },
     fr: {
         nav_services: "Services",
@@ -192,7 +204,10 @@ const translations = {
         contact_phone: "📞 +52 123 456 7890",
         contact_email: "✉️ contact@driturre.me",
         map_placeholder: "Plan de situation (Espace réservé)",
-        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Tous droits réservés."
+        footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Tous droits réservés.",
+        chat_header: "Assistant Virtuel Dr Iturre",
+        chat_welcome: "Bonjour ! Je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui ?",
+        chat_placeholder: "Écrivez un message..."
     }
 };
 

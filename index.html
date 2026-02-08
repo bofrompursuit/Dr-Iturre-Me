@@ -178,7 +178,33 @@
         </div>
     </footer>
 
+    <!-- Chatbot UI -->
+    <div id="chatbot-toggle" class="chatbot-toggle">
+        <span class="chatbot-toggle__icon">💬</span>
+    </div>
+
+    <div id="chatbot-window" class="chatbot-window chatbot-window--hidden">
+        <div class="chatbot-window__header">
+            <h3 data-i18n="chat_header">Asistente Virtual Dr. Iturre</h3>
+            <button id="chatbot-close" class="chatbot-window__close">&times;</button>
+        </div>
+        <div id="chatbot-messages" class="chatbot-window__messages">
+            <div class="message message--bot" data-i18n="chat_welcome">¡Hola! Soy tu asistente virtual. ¿En qué puedo
+                ayudarte hoy?</div>
+        </div>
+        <div class="chatbot-window__input">
+            <input type="text" id="chatbot-input-field" placeholder="Escribe un mensaje..."
+                data-i18n="[placeholder]chat_placeholder">
+            <button id="chatbot-send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <script src="main.js"></script>
+    <script type="module" src="chat.js"></script>
 </body>
 
 </html>
