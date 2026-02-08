@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Iturre - Medical Services</title>
-    <meta name="description" content="Servicios médicos de alta calidad por el Dr. Iturre. Consulta, productos médicos y paquetes especiales.">
+    <meta name="description"
+        content="Servicios médicos de alta calidad por el Dr. Iturre. Consulta, productos médicos y paquetes especiales.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -19,17 +23,29 @@
             </div>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="#services" class="nav__link">Servicios</a></li>
-                    <li><a href="#products" class="nav__link">Productos</a></li>
-                    <li><a href="#gallery" class="nav__link">Galería</a></li>
-                    <li><a href="#contact" class="nav__link">Contacto</a></li>
+                    <li><a href="#services" class="nav__link" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="#products" class="nav__link" data-i18n="nav_products">Productos</a></li>
+                    <li><a href="#gallery" class="nav__link" data-i18n="nav_gallery">Galería</a></li>
+                    <li><a href="#contact" class="nav__link" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="header__cta">
-                <a href="https://wa.me/your-number" class="btn btn--secondary btn--whatsapp">
-                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.604c-1.914 0-3.793-.514-5.432-1.487l-.389-.231-4.041 1.06 1.079-3.937-.253-.403C2.593 15.45 2.001 13.266 2.001 11c0-4.963 4.037-9 9-9s9 4.037 9 9-4.037 9-9 9m0-20C5.373 2 0 7.373 0 14c0 2.123.553 4.12 1.519 5.86l-1.614 5.895 6.035-1.583C7.514 24.135 9.534 24.667 11.651 24.667c6.627 0 12-5.373 12-12s-5.373-12-12-12"/></svg>
-                    WhatsApp
-                </a>
+            <div class="header__selectors">
+                <select id="language-select" class="lang-select">
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                    <option value="pt">PT</option>
+                    <option value="zh">ZH</option>
+                    <option value="fr">FR</option>
+                </select>
+                <div class="header__cta">
+                    <a href="https://wa.me/your-number" class="btn btn--secondary btn--whatsapp">
+                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.604c-1.914 0-3.793-.514-5.432-1.487l-.389-.231-4.041 1.06 1.079-3.937-.253-.403C2.593 15.45 2.001 13.266 2.001 11c0-4.963 4.037-9 9-9s9 4.037 9 9-4.037 9-9 9m0-20C5.373 2 0 7.373 0 14c0 2.123.553 4.12 1.519 5.86l-1.614 5.895 6.035-1.583C7.514 24.135 9.534 24.667 11.651 24.667c6.627 0 12-5.373 12-12s-5.373-12-12-12" />
+                        </svg>
+                        <span data-i18n="whatsapp">WhatsApp</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -39,15 +55,18 @@
         <section class="hero">
             <div class="container hero__grid">
                 <div class="hero__content">
-                    <h1 class="hero__title">Salud y Bienestar con el Dr. Iturre</h1>
-                    <p class="hero__description">Brindamos servicios médicos especializados con un enfoque humano y profesional para toda su familia.</p>
+                    <h1 class="hero__title" data-i18n="hero_title">Salud y Bienestar con el Dr. Iturre</h1>
+                    <p class="hero__description" data-i18n="hero_description">Brindamos servicios médicos especializados
+                        con un enfoque humano y profesional para toda su familia.</p>
                     <div class="hero__actions">
-                        <a href="#services" class="btn btn--primary">Explorar Servicios</a>
-                        <a href="#contact" class="btn btn--outline">Contactar Ahora</a>
+                        <a href="#services" class="btn btn--primary" data-i18n="hero_btn_services">Explorar
+                            Servicios</a>
+                        <a href="#contact" class="btn btn--outline" data-i18n="hero_btn_contact">Contactar Ahora</a>
                     </div>
                 </div>
                 <div class="hero__image-container">
-                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" alt="Dr. Iturre Medical Practice" class="hero__image">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800"
+                        alt="Dr. Iturre Medical Practice" class="hero__image">
                 </div>
             </div>
         </section>
@@ -55,33 +74,38 @@
         <!-- Services Section -->
         <section id="services" class="services section">
             <div class="container text-center">
-                <h2 class="section__title">Nuestros Servicios</h2>
-                <p class="section__subtitle">Atención médica integral de alta calidad.</p>
+                <h2 class="section__title" data-i18n="section_services_title">Nuestros Servicios</h2>
+                <p class="section__subtitle" data-i18n="section_services_subtitle">Atención médica integral de alta
+                    calidad.</p>
                 <div class="services__grid">
                     <!-- Service cards will be here -->
                     <div class="card service-card">
                         <div class="service-card__icon">⚕️</div>
-                        <h3 class="service-card__title">Consulta General</h3>
-                        <p class="service-card__text">Revisiones médicas completas y seguimiento preventivo.</p>
-                        <button class="btn btn--dark btn--sm">Reservar</button>
+                        <h3 class="service-card__title" data-i18n="service_general_title">Consulta General</h3>
+                        <p class="service-card__text" data-i18n="service_general_text">Revisiones médicas completas y
+                            seguimiento preventivo.</p>
+                        <button class="btn btn--dark btn--sm" data-i18n="btn_reserve">Reservar</button>
                     </div>
                     <div class="card service-card">
                         <div class="service-card__icon">🩺</div>
-                        <h3 class="service-card__title">Especialidades</h3>
-                        <p class="service-card__text">Acceso a diagnósticos especializados y tratamientos avanzados.</p>
-                        <button class="btn btn--dark btn--sm">Reservar</button>
+                        <h3 class="service-card__title" data-i18n="service_specialties_title">Especialidades</h3>
+                        <p class="service-card__text" data-i18n="service_specialties_text">Acceso a diagnósticos
+                            especializados y tratamientos avanzados.</p>
+                        <button class="btn btn--dark btn--sm" data-i18n="btn_reserve">Reservar</button>
                     </div>
                     <div class="card service-card">
                         <div class="service-card__icon">🧪</div>
-                        <h3 class="service-card__title">Análisis Clínicos</h3>
-                        <p class="service-card__text">Resultados rápidos y precisos para su diagnóstico.</p>
-                        <button class="btn btn--dark btn--sm">Reservar</button>
+                        <h3 class="service-card__title" data-i18n="service_analysis_title">Análisis Clínicos</h3>
+                        <p class="service-card__text" data-i18n="service_analysis_text">Resultados rápidos y precisos
+                            para su diagnóstico.</p>
+                        <button class="btn btn--dark btn--sm" data-i18n="btn_reserve">Reservar</button>
                     </div>
                     <div class="card service-card">
                         <div class="service-card__icon">💉</div>
-                        <h3 class="service-card__title">Vacunación</h3>
-                        <p class="service-card__text">Protección preventiva para todas las edades.</p>
-                        <button class="btn btn--dark btn--sm">Reservar</button>
+                        <h3 class="service-card__title" data-i18n="service_vac_title">Vacunación</h3>
+                        <p class="service-card__text" data-i18n="service_vac_text">Protección preventiva para todas las
+                            edades.</p>
+                        <button class="btn btn--dark btn--sm" data-i18n="btn_reserve">Reservar</button>
                     </div>
                 </div>
             </div>
@@ -90,17 +114,20 @@
         <!-- Products Section -->
         <section id="products" class="products section bg-light">
             <div class="container">
-                <h2 class="section__title text-center">Productos Médicos</h2>
+                <h2 class="section__title text-center" data-i18n="section_products_title">Productos Médicos</h2>
                 <div class="product-block">
                     <div class="product-block__image">
-                        <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&q=80&w=600" alt="Producto Médico 1">
+                        <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&q=80&w=600"
+                            alt="Producto Médico 1">
                     </div>
                     <div class="product-block__content">
-                        <span class="badge">BEST SELLER</span>
-                        <h3 class="product-block__title">Kit de Primeros Auxilios Pro</h3>
-                        <p class="product-block__text">Equipamiento completo para emergencias del hogar o laborales.</p>
-                        <p class="product-block__price">$1,200 MXN</p>
-                        <a href="https://wa.me/your-number" class="btn btn--primary">Comprar por WhatsApp</a>
+                        <span class="badge" data-i18n="product_bestseller">BEST SELLER</span>
+                        <h3 class="product-block__title" data-i18n="product_kit_title">Kit de Primeros Auxilios Pro</h3>
+                        <p class="product-block__text" data-i18n="product_kit_text">Equipamiento completo para
+                            emergencias del hogar o laborales.</p>
+                        <p class="product-block__price" data-i18n="product_kit_price">$1,200 MXN</p>
+                        <a href="https://wa.me/your-number" class="btn btn--primary"
+                            data-i18n="product_buy_whatsapp">Comprar por WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -109,11 +136,14 @@
         <!-- Gallery Section -->
         <section id="gallery" class="gallery section">
             <div class="container text-center">
-                <h2 class="section__title">Nuestras Instalaciones</h2>
+                <h2 class="section__title" data-i18n="section_gallery_title">Nuestras Instalaciones</h2>
                 <div class="gallery__grid">
-                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=400" alt="Consultorio" class="gallery__item">
-                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=400" alt="Sala de espera" class="gallery__item">
-                    <img src="https://images.unsplash.com/photo-1538108197017-c1c46cbdd097?auto=format&fit=crop&q=80&w=400" alt="Equipamiento" class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=400"
+                        alt="Consultorio" class="gallery__item" data-i18n="[alt]img_consultorio">
+                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=400"
+                        alt="Sala de espera" class="gallery__item" data-i18n="[alt]img_waiting">
+                    <img src="https://images.unsplash.com/photo-1538108197017-c1c46cbdd097?auto=format&fit=crop&q=80&w=400"
+                        alt="Equipamiento" class="gallery__item" data-i18n="[alt]img_equipment">
                 </div>
             </div>
         </section>
@@ -123,17 +153,18 @@
             <div class="container">
                 <div class="contact__grid">
                     <div class="contact__info">
-                        <h2 class="section__title">Contactanos</h2>
-                        <p>Estamos listos para atenderte. Visítanos o llámanos directamente.</p>
+                        <h2 class="section__title" data-i18n="section_contact_title">Contactanos</h2>
+                        <p data-i18n="section_contact_text">Estamos listos para atenderte. Visítanos o llámanos
+                            directamente.</p>
                         <ul class="contact__list">
-                            <li>📍 Av. Principal #123, Ciudad</li>
-                            <li>📞 +52 123 456 7890</li>
-                            <li>✉️ contacto@driturre.me</li>
+                            <li data-i18n="contact_address">📍 Av. Principal #123, Ciudad</li>
+                            <li data-i18n="contact_phone">📞 +52 123 456 7890</li>
+                            <li data-i18n="contact_email">✉️ contacto@driturre.me</li>
                         </ul>
                     </div>
                     <div class="contact__map">
                         <div class="map-placeholder">
-                            <span>Mapa de ubicación (Placeholder)</span>
+                            <span data-i18n="map_placeholder">Mapa de ubicación (Placeholder)</span>
                         </div>
                     </div>
                 </div>
@@ -143,10 +174,11 @@
 
     <footer class="footer">
         <div class="container footer__content">
-            <p>&copy; 2026 Dr. Iturre Medical Services. Todos los derechos reservados.</p>
+            <p data-i18n="footer_copyright">&copy; 2026 Dr. Iturre Medical Services. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
 </body>
+
 </html>
