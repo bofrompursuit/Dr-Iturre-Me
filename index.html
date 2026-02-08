@@ -178,6 +178,30 @@
         </div>
     </footer>
 
+    <!-- Patient Navigator UI -->
+    <div id="navigator-toggle" class="chatbot-toggle navigator-toggle">
+        <span class="chatbot-toggle__icon">🧭</span>
+    </div>
+
+    <div id="navigator-window" class="chatbot-window navigator-window chatbot-window--hidden">
+        <div class="chatbot-window__header">
+            <h3 data-i18n="nav_header">Navegador del Paciente</h3>
+            <button id="navigator-close" class="chatbot-window__close">&times;</button>
+        </div>
+        <div id="navigator-content" class="chatbot-window__messages navigator-content">
+            <!-- Step 1 will be injected here -->
+        </div>
+        <div class="chatbot-window__input navigator-input">
+            <input type="text" id="navigator-input-field" placeholder="O describe tu caso..."
+                data-i18n="[placeholder]nav_placeholder">
+            <button id="navigator-send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <!-- Chatbot UI -->
     <div id="chatbot-toggle" class="chatbot-toggle">
         <span class="chatbot-toggle__icon">💬</span>
@@ -205,6 +229,7 @@
 
     <script src="main.js"></script>
     <script type="module" src="chat.js"></script>
+    <script type="module" src="navigator.js"></script>
 </body>
 
 </html>

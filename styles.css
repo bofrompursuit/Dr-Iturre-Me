@@ -426,9 +426,19 @@ h3 {
     font-size: 1.5rem;
 }
 
+.navigator-toggle {
+    right: 105px;
+    background-color: var(--success);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
 .chatbot-toggle:hover {
     transform: scale(1.1);
     background-color: var(--primary-dark);
+}
+
+.navigator-toggle:hover {
+    background-color: #15803d;
 }
 
 .chatbot-window {
@@ -449,6 +459,10 @@ h3 {
     transform: translateY(0);
 }
 
+.navigator-window {
+    right: 105px;
+}
+
 .chatbot-window--hidden {
     opacity: 0;
     transform: translateY(20px);
@@ -462,6 +476,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navigator-window .chatbot-window__header {
+    background-color: var(--success);
 }
 
 .chatbot-window__header h3 {
@@ -510,6 +528,10 @@ h3 {
     border-bottom-right-radius: 2px;
 }
 
+.navigator-window .message--user {
+    background-color: var(--success);
+}
+
 .chatbot-window__input {
     padding: 16px;
     border-top: 1px solid var(--border);
@@ -531,6 +553,10 @@ h3 {
     border-color: var(--primary);
 }
 
+.navigator-window .chatbot-window__input input:focus {
+    border-color: var(--success);
+}
+
 .chatbot-window__input button {
     background: none;
     border: none;
@@ -541,8 +567,69 @@ h3 {
     transition: var(--transition);
 }
 
+.navigator-window .chatbot-window__input button {
+    color: var(--success);
+}
+
 .chatbot-window__input button:hover {
     color: var(--primary-dark);
+}
+
+/* Navigator Specific */
+.navigator-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nav-option-btn {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-option-btn:hover {
+    border-color: var(--success);
+    color: var(--success);
+    background-color: rgba(22, 163, 74, 0.05);
+}
+
+.solution-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--success);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.solution-card__title {
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-main);
+}
+
+.solution-card__text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--success);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 480px) {
@@ -551,5 +638,13 @@ h3 {
         right: 20px;
         bottom: 90px;
         height: 450px;
+    }
+
+    .navigator-window {
+        right: 20px;
+    }
+
+    .navigator-toggle {
+        right: 90px;
     }
 }

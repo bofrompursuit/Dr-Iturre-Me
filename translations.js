@@ -39,7 +39,9 @@ const translations = {
         footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Todos los derechos reservados.",
         chat_header: "Asistente Virtual Dr. Iturre",
         chat_welcome: "¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?",
-        chat_placeholder: "Escribe un mensaje..."
+        chat_placeholder: "Escribe un mensaje...",
+        nav_header: "Navegador del Paciente",
+        nav_placeholder: "O describe tu caso..."
     },
     en: {
         nav_services: "Services",
@@ -81,7 +83,9 @@ const translations = {
         footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. All rights reserved.",
         chat_header: "Dr. Iturre Virtual Assistant",
         chat_welcome: "Hello! I am your virtual assistant. How can I help you today?",
-        chat_placeholder: "Type a message..."
+        chat_placeholder: "Type a message...",
+        nav_header: "Patient Navigator",
+        nav_placeholder: "Or describe your case..."
     },
     pt: {
         nav_services: "Serviços",
@@ -123,7 +127,9 @@ const translations = {
         footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Todos os direitos reservados.",
         chat_header: "Assistente Virtual Dr. Iturre",
         chat_welcome: "Olá! Eu sou o seu assistente virtual. Como posso ajudar você hoje?",
-        chat_placeholder: "Digite uma mensagem..."
+        chat_placeholder: "Digite uma mensaje...",
+        nav_header: "Navegador do Paciente",
+        nav_placeholder: "Ou descreva o seu caso..."
     },
     zh: {
         nav_services: "服务",
@@ -165,7 +171,9 @@ const translations = {
         footer_copyright: "&copy; 2026 Dr. Iturre Medical Services。保留所有权利。",
         chat_header: "Iturre 医生虚拟助手",
         chat_welcome: "您好！我是您的虚拟助手。今天我能帮您什么？",
-        chat_placeholder: "输入消息..."
+        chat_placeholder: "输入消息...",
+        nav_header: "患者导读",
+        nav_placeholder: "或描述您的情况..."
     },
     fr: {
         nav_services: "Services",
@@ -207,7 +215,9 @@ const translations = {
         footer_copyright: "&copy; 2026 Dr. Iturre Medical Services. Tous droits réservés.",
         chat_header: "Assistant Virtuel Dr Iturre",
         chat_welcome: "Bonjour ! Je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui ?",
-        chat_placeholder: "Écrivez un message..."
+        chat_placeholder: "Écrivez un message...",
+        nav_header: "Navigateur du Patient",
+        nav_placeholder: "Ou décrivez votre cas..."
     }
 };
 
